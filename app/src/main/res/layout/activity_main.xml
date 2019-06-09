@@ -1,0 +1,297 @@
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Cafeteria :"
+            android:textColor="#000000"
+            android:background="#19FF62"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Selecione a quantidade: "
+            android:textSize="25sp"
+            android:textColor="#000000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/cafpret"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Café Preto: R$5,00"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mencafpre"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="menos1"
+                android:textSize="15sp"
+                android:text="-1"
+                android:layout_below="@+id/preco"
+                android:layout_toRightOf="@id/cafpret"
+                android:background="#FF7166"/>
+
+            <TextView
+                android:id="@+id/numcafepre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="0"
+                android:layout_below="@+id/preco"
+                android:layout_toRightOf="@+id/mencafpre"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/maicafpre"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="mais1"
+                android:textSize="15sp"
+                android:text="+1"
+                android:layout_below="@+id/preco"
+                android:layout_toRightOf="@+id/numcafepre"
+                android:background="#FF7166"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/caflei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Café com Leite: R$8,00"
+            android:layout_below="@id/cafpret"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mencaflei"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="menos2"
+                android:textSize="15sp"
+                android:text="-1"
+                android:layout_below="@+id/cafpret"
+                android:layout_toRightOf="@id/caflei"
+                android:background="#FF7166"/>
+
+            <TextView
+                android:id="@+id/numcafelei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="0"
+                android:layout_below="@+id/cafpret"
+                android:layout_toRightOf="@+id/mencaflei"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/maicaflei"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="mais2"
+                android:textSize="15sp"
+                android:text="+1"
+                android:layout_below="@+id/cafpret"
+                android:layout_toRightOf="@+id/numcafelei"
+                android:background="#FF7166"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/cafexp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Café Expresso: R$8,00"
+            android:layout_below="@+id/caflei"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mencafexp"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="menos3"
+                android:textSize="15sp"
+                android:text="-1"
+                android:layout_below="@+id/caflei"
+                android:layout_toRightOf="@id/cafexp"
+                android:background="#FF7166"/>
+
+            <TextView
+                android:id="@+id/numcafeexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="0"
+                android:layout_below="@+id/caflei"
+                android:layout_toRightOf="@+id/mencafexp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/maicafexp"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="mais3"
+                android:textSize="15sp"
+                android:text="+1"
+                android:layout_below="@+id/caflei"
+                android:layout_toRightOf="@+id/numcafeexp"
+                android:background="#FF7166"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/cafcap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Café Capuccino: 15,00"
+            android:layout_below="@+id/cafexp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mencafcap"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="menos4"
+                android:textSize="15sp"
+                android:text="-1"
+                android:layout_below="@+id/cafexp"
+                android:layout_toRightOf="@id/cafcap"
+                android:background="#FF7166"/>
+
+            <TextView
+                android:id="@+id/numcafecap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="0"
+                android:layout_below="@+id/cafexp"
+                android:layout_toRightOf="@+id/mencafcap"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/maicafcap"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:onClick="mais4"
+                android:textSize="15sp"
+                android:text="+1"
+                android:layout_below="@+id/cafexp"
+                android:layout_toRightOf="@+id/numcafecap"
+                android:background="#FF7166"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="Preço total: R$0,00"
+            android:layout_below="@+id/cafcap"
+            android:textColor="#000000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Pedido:"
+            android:textSize="25sp"
+            android:textColor="#B80117"/>
+
+        <TextView
+            android:id="@+id/pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gostaria de 0 ..., por favor.
+    O valor total será de R$0,00. Obrigado!"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textSize="20sp"
+            android:text="Fazer Pedido"
+            android:background="#19FF62"/>
+    </LinearLayout>
+</ScrollView>
